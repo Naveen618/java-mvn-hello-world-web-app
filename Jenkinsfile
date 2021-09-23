@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Directory') {
             steps {
-                sh 'cd /home/slave5/workspace/Pipelinejob/java-mvn-hello-world-web-app/'
+                sh 'cd /home/slave2/workspace/Pipelinejob/java-mvn-hello-world-web-app/'
             }
         }
         stage('Compile') {
