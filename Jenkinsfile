@@ -17,6 +17,8 @@ stage('build') {
          
         	steps {
  sh 'cd java-mvn-hello-world-web-app'
+            sh 'pwd'
+            sh 'ls'
  sh 'mvn package'
 }
 }
