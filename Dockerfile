@@ -3,4 +3,4 @@ WORKDIR /dir
 COPY . .
 RUN mvn package
 FROM tomcat:jre8-temurin-focal
-COPY --from=build /dir/target/mvn-helo-world.war /usr/local/tomcat/webapps
+COPY --from=build /dir/target/mvn-hello-world.war /usr/local/tomcat/webapps
