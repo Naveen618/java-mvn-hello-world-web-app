@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'slave2'}
+  agent {label 'Slave2'}
   stages {
    
 stage ('build'){
@@ -19,7 +19,7 @@ stage ('build'){
     }
    
   stage ('deploy'){
-    agent {label 'slave2'}
+    agent {label 'Slave2'}
       steps{
         sh 'docker login -u naveen618 -p Naveen1518'
         sh 'docker pull naveen618/mstagedh:1.0'
